@@ -2,6 +2,11 @@
 #define DERMA_H
 
 #include <QMainWindow>
+#include <QMessageBox>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
 
 namespace Ui {
 class Derma;
@@ -16,6 +21,7 @@ public:
     ~Derma();
 
 private:
+    bool createConnection();
     Ui::Derma *ui;
 };
 
