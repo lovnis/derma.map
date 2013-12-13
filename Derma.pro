@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        derma.cpp
+        derma.cpp \
+    model.cpp
 
-HEADERS  += derma.h
+HEADERS  += derma.h \
+    model.h
 
 FORMS    += derma.ui

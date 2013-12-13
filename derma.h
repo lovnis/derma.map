@@ -1,6 +1,7 @@
 #ifndef DERMA_H
 #define DERMA_H
 
+#include "model.h"
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QtSql>
@@ -22,6 +23,7 @@ public:
 
 private:
     bool createConnection();
+    Model *model;
     Ui::Derma *ui;
 };
 
